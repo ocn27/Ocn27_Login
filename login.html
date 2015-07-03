@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ocn27</title>
+	<link rel="Shortcut Icon" href="images/favicon.ico" type="image/x-icon"> 
+	<link type="text/css" rel="stylesheet" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" href="css/ocn27.css" />
+	<link type="text/css" rel="stylesheet" href="css/jquery.fullPage.css" />
+</head>
+<body>
+	<div id="fullpage">
+		<div class="section section1">
+			<div class="no_select"></div>
+			<div class="rotate-border">
+				<div id="avatar" class="avatar" onMouseUp="icon_Out();" onMouseDown="get_Reset();">
+					<img src="images/avatar.jpg">
+				</div>
+				<div id="Ocn_Menu" class="Ocn_Menu"  onMouseUp="Ocn_Menu_Out();">
+					<img src="images/Ocn_Menu.png">
+				</div>
+				<div id="login" class="login" onMouseUp="login_Out();">
+					<img src="images/login.png">
+				</div>
+				<div id="homepage" class="homepage" onMouseUp="homepage_Out();">
+					<img src="images/homepage.png">
+				</div>
+			</div>
+		</div>
+
+		<div class="section section2">
+			<div class="go_Back" onMouseUp="go_Back();">
+				<img src="images/go_Back.png">
+			</div>
+
+			<IFRAME marginWidth=0 marginHeight=0 src="http://ocn27.com/wordpress" frameBorder=0 width="100%" height="100%"></IFRAME>
+		</div>
+
+	</div>
+	<script type="text/javascript" data-main="js/config.js" src="http://cdn.bootcss.com/require.js/2.1.14/require.min.js"></script>
+</body>
+</html>

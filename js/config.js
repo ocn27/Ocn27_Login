@@ -26,7 +26,7 @@ require(['jquery.fullPage', 'BaiduMap', 'OcnJs'], function( fullPage, BaiduMap )
 	//FullPage
 	$('#fullpage').fullpage({
         'css3': true,
-        'sectionsColor': ['#000', '#254875'],
+        'sectionsColor': ['#000', '#1599A3'],
         anchors: ['page1', 'page2']
     })
 	$.fn.fullpage.setAllowScrolling(false);

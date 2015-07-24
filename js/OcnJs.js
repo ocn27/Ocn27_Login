@@ -37,3 +37,7 @@ function go_Back() {
 function login_Out() {
 	window.location.href="http://ocn27.com/wordpress/wp-login.php"; 
 }
+
+function Ocn_Menu_Out() {
+	window.location.href="https://github.com/ocn27"; 
+}

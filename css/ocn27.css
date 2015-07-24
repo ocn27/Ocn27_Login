@@ -9,9 +9,6 @@ body { position: relative; width: 100%; height: 100%; background: #000; color: #
 .avatar img:hover { -webkit-transform:scale(0.95); -moz-transform:scale(0.95); }
 .rotate-border { -webkit-animation: arrow 1000ms ease 1200ms infinite normal both; -moz-animation: arrow 1000ms ease 1200ms infinite normal both; }
 
-.go_Back { position: absolute; bottom: 10%; right: 6%; width: 50px; height: 50px; }
-.go_Back img { width: 100px; height: 100px; overflow: hidden; }
-.go_Back img:hover { -webkit-transform:scale(0.95); -moz-transform:scale(0.95); }
 /* avatar_Click */
 .avatar_Click { 
 	-webkit-animation: avatar_Click 1.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s forwards;
@@ -31,6 +28,12 @@ body { position: relative; width: 100%; height: 100%; background: #000; color: #
 .homepage img { width: 120px; height: 120px; overflow: hidden; -webkit-transition:all 1.5s ease 0s;-moz-transition:all 1.5s ease 0s; }
 .homepage img:hover { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); }
 
+/* avatar_Click */
+.go_Back { position: absolute; top: 10%; right: 8%; width: 50px; height: 50px; }
+.go_Back img { width: 100px; height: 100px; overflow: hidden; }
+.go_Back img:hover { -webkit-transform:scale(0.95); -moz-transform:scale(0.95); }
+
+#main-iframe { width:100%; height:100%; -webkit-overflow-scrolling:touch; overflow: scroll; }
 /* chrome */
 @-webkit-keyframes arrow {
 	0%, 100% { -webkit-transform: translateY(0); }
@@ -92,7 +95,7 @@ body { position: relative; width: 100%; height: 100%; background: #000; color: #
 }
 @-moz-keyframes Ocn_Menu_Out {
 	0% { opacity: 0; -moz-transform: scale(0) translateX(0) translateY(0); }
-	100% { opacity: 1; -webkit-transform: scale(1) translateX(300px) translateY(200px); }
+	100% { opacity: 1; -moz-transform: scale(1) translateX(300px) translateY(200px); }
 }
 @-moz-keyframes Ocn_Menu_In {
 	0% { opacity: 1; -moz-transform: scale(1) translateX(300px) translateY(200px); }

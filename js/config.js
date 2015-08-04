@@ -1,12 +1,12 @@
 require.config({
+
 	baseUrl: './js',
 	paths: {
+		'OcnJs': 'OcnJs',
 		'jquery': 'http://cdn.bootcss.com/jquery/1.11.1/jquery.min',
 		'jquery.easings': 'jquery.easings.min',
 		'jquery.slimscroll': 'jquery.slimscroll.min',
-		'jquery.fullPage': 'jquery.fullPage.min',
-		'BaiduMap': 'BaiduMap',
-		'OcnJs': 'OcnJs'
+		'jquery.fullPage': 'jquery.fullPage.min'
 	},
 	shim: {
 		'jquery.easings': {
@@ -21,7 +21,7 @@ require.config({
 	}
 });
 
-require(['jquery.fullPage', 'BaiduMap', 'OcnJs'], function( fullPage, BaiduMap ){
+require(['jquery.fullPage', 'OcnJs'], function( fullPage, BaiduMap ){
 
 	//FullPage
 	$('#fullpage').fullpage({
@@ -31,9 +31,6 @@ require(['jquery.fullPage', 'BaiduMap', 'OcnJs'], function( fullPage, BaiduMap )
     })
 	$.fn.fullpage.setAllowScrolling(false);
 	$.fn.fullpage.keyboardScrolling(false);
-
-	//BaidMap
-	BaiduMap();
 
 	//Kill IE
 	var isChrome = window.navigator.userAgent.toLowerCase().indexOf('chrome'),

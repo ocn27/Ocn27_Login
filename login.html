@@ -14,7 +14,7 @@
 			<div class="no_select"></div>
 			<div class="rotate-border">
 				<div id="avatar" class="avatar" onMouseUp="icon_Out();" onMouseDown="get_Reset();">
-					<img src="images/avatar.jpg">
+					<img src="images/avatar.png">
 				</div>
 				<div id="Ocn_Menu" class="Ocn_Menu"  onMouseUp="Ocn_Menu_Out();">
 					<img src="images/Ocn_Menu.png">
@@ -37,6 +37,16 @@
 		</div>
 
 	</div>
+	<script>
+		//加载等待（loading画面---待作成）
+		document.getElementById("fullpage").style.display="none";
+		document.write("<div id=\"loadDiv\"><img src=\"images/loading.gif\"></div>");
+		window.onload = function()
+		{ 
+			document.getElementById("fullpage").style.display="";   
+			document.getElementById("loadDiv").parentNode.removeChild(document.getElementById("loadDiv"));    
+		}
+	</script>
 	<script type="text/javascript" data-main="js/config.js" src="http://cdn.bootcss.com/require.js/2.1.14/require.min.js"></script>
 </body>
 </html>

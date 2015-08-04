@@ -1,13 +1,18 @@
 html { width: 100%; height: 100%; overflow: hidden; }
 body { position: relative; width: 100%; height: 100%; background: #000; color: #fff; font-family: "Microsoft Yahei"; }
+
+/* loadDiv */
+#loadDiv { position: relative; width: 100%; height: 100%; background: #333; }
+#loadDiv img { position: absolute; top: 50%; left: 50%; width: 400px; height: 300px; margin: -150px 0 0 -200px; }
+
 /* bg */
 .no_select { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
-
-.rotate-border { position: relative; top: -10%; left: 50%; width: 120px; height: 120px; margin: -60px 0 0 -60px; border: 5px solid #B7EECF; box-shadow: 0 0 30px #FFF; border-radius: 50%; }
-.avatar { position: absolute; z-index: 10; width: 120px; height: 120px; border-radius: 50%; }
-.avatar img { width: 120px; height: 120px; border-radius: 50%; overflow: hidden; -webkit-transition:all .1s ease 0s;-moz-transition:all .1s ease 0s; }
+.section1 { background: #000 url(/images/bg_paper3.png) no-repeat; background-size:100% 100%; }
+.rotate-border { position: relative; top: -10%; left: 50%; width: 120px; height: 120px; margin: -60px 0 0 -60px; }
+.avatar { position: absolute; z-index: 10; width: 120px; height: 120px; }
+.avatar img { width: 120px; height: 120px; overflow: hidden; -webkit-transition:all .1s ease 0s;-moz-transition:all .1s ease 0s; }
 .avatar img:hover { -webkit-transform:scale(0.95); -moz-transform:scale(0.95); }
-.rotate-border { -webkit-animation: arrow 1000ms ease 1200ms infinite normal both; -moz-animation: arrow 1000ms ease 1200ms infinite normal both; }
+.clickme { -webkit-animation: arrow 1000ms ease 1200ms infinite normal both; -moz-animation: arrow 1000ms ease 1200ms infinite normal both; }
 
 /* avatar_Click */
 .avatar_Click { 
@@ -18,7 +23,7 @@ body { position: relative; width: 100%; height: 100%; background: #000; color: #
 /* Ocn_Menu */
 .Ocn_Menu { z-index: 0; width: 120px; height: 120px; border-radius: 50%; position: absolute; top: 0; display: none;}
 .Ocn_Menu img { width: 120px; height: 120px; overflow: hidden; -webkit-transition:all 1.5s ease 0s;-moz-transition:all 1.5s ease 0s; }
-.Ocn_Menu img:hover { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); }
+.Ocn_Menu img:hover { -webkit-transform:rotate(-360deg); -moz-transform:rotate(-360deg); }
 /* login */
 .login { z-index: 0; width: 120px; height: 120px; position: absolute; top: 0; display: none;}
 .login img { width: 120px; height: 120px;overflow: hidden; -webkit-transition:all 1.5s ease 0s;-moz-transition:all 1.5s ease 0s; }
@@ -26,9 +31,9 @@ body { position: relative; width: 100%; height: 100%; background: #000; color: #
 /* homepage */
 .homepage { z-index: 0; width: 120px; height: 120px; position: absolute; top: 0; display: none;}
 .homepage img { width: 120px; height: 120px; overflow: hidden; -webkit-transition:all 1.5s ease 0s;-moz-transition:all 1.5s ease 0s; }
-.homepage img:hover { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); }
+.homepage img:hover { -webkit-transform:rotateY(360deg); -moz-transform:rotateY(360deg);  }
 
-/* avatar_Click */
+/* go_Back */
 .go_Back { position: absolute; top: 10%; right: 8%; width: 50px; height: 50px; }
 .go_Back img { width: 100px; height: 100px; overflow: hidden; }
 .go_Back img:hover { -webkit-transform:scale(0.95); -moz-transform:scale(0.95); }
@@ -40,8 +45,8 @@ body { position: relative; width: 100%; height: 100%; background: #000; color: #
 	50% { -webkit-transform: translateY(10px); }
 }
 @-webkit-keyframes avatar_Click {
-	0% { -webkit-transform: rotateX(0deg); }
-	100% { -webkit-transform: rotateX(360deg); }
+	0% { -webkit-transform: rotateY(0deg); }
+	100% { -webkit-transform: rotateY(360deg); }
 }
 @-webkit-keyframes homepage_Out {
 	0% { opacity: 0; -webkit-transform: scale(0) translateY(0); }
@@ -74,8 +79,8 @@ body { position: relative; width: 100%; height: 100%; background: #000; color: #
 	50% { -moz-transform: translateY(10px); }
 }
 @-moz-keyframes avatar_Click {
-	0% { -moz-transform: rotateX(0deg); }
-	100% { -moz-transform: rotateX(360deg); }
+	0% { -moz-transform: rotateY(0deg); }
+	100% { -moz-transform: rotateY(360deg); }
 }
 @-moz-keyframes homepage_Out {
 	0% { opacity: 0; -moz-transform: scale(0) translateY(0); }

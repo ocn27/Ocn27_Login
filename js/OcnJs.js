@@ -35,9 +35,66 @@ function go_Back() {
 	window.location.href="#page1"; 
 }
 function login_Out() {
-	window.location.href="http://ocn27.com/wordpress/wp-login.php"; 
+	window.location.href="http://ocn27.com/demo/wechat_baidu/wechat.html"; 
 }
 
-function Ocn_Menu_Out() {
-	window.location.href="https://github.com/ocn27"; 
-}
+
+//jquery
+$(document).ready(function(){
+	
+	// go left or right model
+	$("#Ocn_Menu").click(function(){
+		Ocn_Menu_Out();
+	});
+	$("#go_Left").click(function(){
+		Ocn_Menu_Back();
+	});
+	// go OcnPlayer
+	$("#music").click(function(){
+		window.open("http://ocn27.com/demo/Ocn_player/index.html");
+	});
+	// go wechat
+	$("#wechat").click(function(){
+		window.open("http://ocn27.com/demo/wechat/index.html");
+	});
+	// train_demo
+	$("#train_demo").click(function(){
+		window.open("http://ocn27.com/demo/train_demo/index.html");
+	});
+	// go Login page
+	$("#Wp_Login").click(function(){
+		window.open("http://ocn27.com/wordpress/wp-login.php");
+	});
+	// go GitHub
+	$("#GitHub").click(function(){
+		window.open("https://github.com/ocn27");
+	});
+	
+	
+
+	function Ocn_Menu_Out() {
+		$.fn.fullpage.moveSlideRight();
+		
+		var time = 0;
+		for(var i=0;i<=8;i++){
+			time+=200;
+			icon_out(i, time);
+	    }
+	    setTimeout(function() {
+			$("#go_Left").fadeToggle();
+	    }, 2000);
+	}
+
+	function icon_out(i, time){
+		setTimeout(function() {
+			$(".icon").eq(i).stop().fadeIn();
+	    }, time);
+	}
+
+	function Ocn_Menu_Back() {
+		$.fn.fullpage.moveSlideLeft();
+		$("#go_Left").stop().fadeToggle();
+        $(".icon").stop().fadeOut();
+	}
+
+});

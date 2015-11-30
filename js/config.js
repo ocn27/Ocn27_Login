@@ -2,11 +2,11 @@ require.config({
 
 	baseUrl: './js',
 	paths: {
-		'OcnJs': 'OcnJs',
-		'jquery': 'http://cdn.bootcss.com/jquery/1.11.1/jquery.min',
+		'jquery': 'http://libs.baidu.com/jquery/1.11.1/jquery.min',
 		'jquery.easings': 'jquery.easings.min',
 		'jquery.slimscroll': 'jquery.slimscroll.min',
-		'jquery.fullPage': 'jquery.fullPage.min'
+		'jquery.fullPage': 'jquery.fullPage.min',
+		'OcnJs': 'OcnJs',
 	},
 	shim: {
 		'jquery.easings': {
@@ -17,20 +17,23 @@ require.config({
 		},
 		'jquery.fullPage': {
 			deps: ['jquery', 'jquery.easings', 'jquery.slimscroll']
-		}
+		},
+		'OcnJs': {
+			deps: ['jquery']
+		},
 	}
 });
 
-require(['jquery.fullPage', 'OcnJs'], function( fullPage, BaiduMap ){
+require(['jquery.fullPage', 'OcnJs'], function(){
 
 	//FullPage
 	$('#fullpage').fullpage({
         'css3': true,
         'sectionsColor': ['#000', '#1599A3'],
-        anchors: ['page1', 'page2']
+        anchors: ['page1', 'page2'],
+        'keyboardScrolling':false
     })
 	$.fn.fullpage.setAllowScrolling(false);
-	$.fn.fullpage.keyboardScrolling(false);
 
 	//Kill IE
 	var isChrome = window.navigator.userAgent.toLowerCase().indexOf('chrome'),

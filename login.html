@@ -11,19 +11,53 @@
 <body>
 	<div id="fullpage">
 		<div class="section section1">
-			<div class="no_select"></div>
-			<div class="rotate-border">
-				<div id="avatar" class="avatar" onMouseUp="icon_Out();" onMouseDown="get_Reset();">
-					<img src="images/avatar.png">
+			<div class="slide">
+				<div class="no_select"></div>
+				<div class="rotate-border">
+					<div id="avatar" class="avatar" onMouseUp="icon_Out();" onMouseDown="get_Reset();">
+						<img src="images/avatar.png">
+					</div>
+					<div id="Ocn_Menu" class="Ocn_Menu">
+						<img src="images/Ocn_Menu.png" title="翻页">
+					</div>
+					<div id="login" class="login" onMouseUp="login_Out();">
+						<img src="images/login.png" title="聊天室">
+					</div>
+					<div id="homepage" class="homepage" onMouseUp="homepage_Out();">
+						<img src="images/homepage.png" title="WordPress主页">
+					</div>
 				</div>
-				<div id="Ocn_Menu" class="Ocn_Menu"  onMouseUp="Ocn_Menu_Out();">
-					<img src="images/Ocn_Menu.png">
+			</div>
+			<div class="page_right slide">
+				<div id="go_Left" class="go_Left">
+					<img src="images/go_Left.png" title="返回">
 				</div>
-				<div id="login" class="login" onMouseUp="login_Out();">
-					<img src="images/login.png">
+				<div id="music" class="icon" >
+					<img src="images/music.png" title="Ocn27音乐播放器">
 				</div>
-				<div id="homepage" class="homepage" onMouseUp="homepage_Out();">
-					<img src="images/homepage.png">
+				<div id="test1" class="icon">
+					<img src="images/test1.png">
+				</div>
+				<div id="test2" class="icon">
+					<img src="images/test2.png">
+				</div>
+				<div id="wechat" class="icon">
+					<img src="images/wechat.png">
+				</div>
+				<div id="test4" class="icon">
+					<img src="images/test4.png">
+				</div>
+				<div id="train_demo" class="icon">
+					<img src="images/train_demo.png" title="练习用Demo">
+				</div>
+				<div id="test6" class="icon">
+					<img src="images/test6.png">
+				</div>
+				<div id="Wp_Login" class="icon">
+					<img src="images/Wp_Login.png" title="WordPress登录页">
+				</div>
+				<div id="GitHub" class="icon">
+					<img src="images/GitHub.png" title="GitHub个人主页">
 				</div>
 			</div>
 		</div>
@@ -44,7 +78,7 @@
 		window.onload = function()
 		{ 
 			document.getElementById("fullpage").style.display="";   
-			document.getElementById("loadDiv").parentNode.removeChild(document.getElementById("loadDiv"));    
+			document.getElementById("loadDiv").parentNode.removeChild(document.getElementById("loadDiv"));
 		}
 	</script>
 	<script type="text/javascript" data-main="js/config.js" src="http://cdn.bootcss.com/require.js/2.1.14/require.min.js"></script>

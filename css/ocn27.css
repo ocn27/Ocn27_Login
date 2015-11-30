@@ -23,7 +23,7 @@ body { position: relative; width: 100%; height: 100%; background: #000; color: #
 /* Ocn_Menu */
 .Ocn_Menu { z-index: 0; width: 120px; height: 120px; border-radius: 50%; position: absolute; top: 0; display: none;}
 .Ocn_Menu img { width: 120px; height: 120px; overflow: hidden; -webkit-transition:all 1.5s ease 0s;-moz-transition:all 1.5s ease 0s; }
-.Ocn_Menu img:hover { -webkit-transform:rotate(-360deg); -moz-transform:rotate(-360deg); }
+.Ocn_Menu img:hover { -webkit-transform:rotateX(360deg); -moz-transform:rotateX(360deg); }
 /* login */
 .login { z-index: 0; width: 120px; height: 120px; position: absolute; top: 0; display: none;}
 .login img { width: 120px; height: 120px;overflow: hidden; -webkit-transition:all 1.5s ease 0s;-moz-transition:all 1.5s ease 0s; }
@@ -32,13 +32,61 @@ body { position: relative; width: 100%; height: 100%; background: #000; color: #
 .homepage { z-index: 0; width: 120px; height: 120px; position: absolute; top: 0; display: none;}
 .homepage img { width: 120px; height: 120px; overflow: hidden; -webkit-transition:all 1.5s ease 0s;-moz-transition:all 1.5s ease 0s; }
 .homepage img:hover { -webkit-transform:rotateY(360deg); -moz-transform:rotateY(360deg);  }
+/* page_right */
+.page_right { position: relative; width: 100%; height: 100%; }
+/* music */
+#music { z-index: 0; width: 120px; height: 120px; position: absolute; top: 20%; left:40%; display: none; }
+#music img { width: 120px; height: 120px; overflow: hidden; -webkit-transition:all 1.5s ease 0s;-moz-transition:all 1.5s ease 0s; }
+#music img:hover { -webkit-transform:rotateY(360deg); -moz-transform:rotateY(360deg); }
+
+/* 未作成预留1 */
+#test1 { z-index: 0; width: 120px; height: 120px; position: absolute; top: 20%; left:55%; display: none; }
+#test1 img { width: 120px; height: 120px; overflow: hidden; -webkit-transition:all 1.5s ease 0s;-moz-transition:all 1.5s ease 0s; }
+#test1 img:hover { -webkit-transform:rotateY(360deg); -moz-transform:rotateY(360deg); }
+/* 未作成预留2 */
+#test2 { z-index: 0; width: 120px; height: 120px; position: absolute; top: 20%; left:70%; display: none; }
+#test2 img { width: 120px; height: 120px; overflow: hidden; -webkit-transition:all 1.5s ease 0s;-moz-transition:all 1.5s ease 0s; }
+#test2 img:hover { -webkit-transform:rotateY(360deg); -moz-transform:rotateY(360deg); }
+/* wechat */
+#wechat { z-index: 0; width: 120px; height: 120px; position: absolute; top: 40%; left:40%; display: none; }
+#wechat img { width: 120px; height: 120px; overflow: hidden; -webkit-transition:all 1.5s ease 0s;-moz-transition:all 1.5s ease 0s; }
+#wechat img:hover { -webkit-transform:rotateY(360deg); -moz-transform:rotateY(360deg); }
+/* 未作成预留4 */
+#test4 { z-index: 0; width: 120px; height: 120px; position: absolute; top: 40%; left:55%; display: none; }
+#test4 img { width: 120px; height: 120px; overflow: hidden; -webkit-transition:all 1.5s ease 0s;-moz-transition:all 1.5s ease 0s; }
+#test4 img:hover { -webkit-transform:rotateY(360deg); -moz-transform:rotateY(360deg); }
+/* 练习用demo */
+#train_demo { z-index: 0; width: 120px; height: 120px; position: absolute; top: 40%; left:70%; display: none; }
+#train_demo img { width: 120px; height: 120px; overflow: hidden; -webkit-transition:all 1.5s ease 0s;-moz-transition:all 1.5s ease 0s; }
+#train_demo img:hover { -webkit-transform:rotateY(360deg); -moz-transform:rotateY(360deg); }
+/* 未作成预留6 */
+#test6 { z-index: 0; width: 120px; height: 120px; position: absolute; top: 60%; left:40%; display: none; }
+#test6 img { width: 120px; height: 120px; overflow: hidden; -webkit-transition:all 1.5s ease 0s;-moz-transition:all 1.5s ease 0s; }
+#test6 img:hover { -webkit-transform:rotateY(360deg); -moz-transform:rotateY(360deg); }
+/* Wp_Login */
+#Wp_Login { z-index: 0; width: 120px; height: 120px; position: absolute; top: 60%; left:55%; display: none; }
+#Wp_Login img { width: 120px; height: 120px; overflow: hidden; -webkit-transition:all 1.5s ease 0s;-moz-transition:all 1.5s ease 0s; }
+#Wp_Login img:hover { -webkit-transform:rotateY(360deg); -moz-transform:rotateY(360deg); }
+/* GitHub */
+#GitHub { z-index: 0; width: 120px; height: 120px; position: absolute; top: 60%; left:70%; display: none; }
+#GitHub img { width: 120px; height: 120px; overflow: hidden; -webkit-transition:all 1.5s ease 0s;-moz-transition:all 1.5s ease 0s; }
+#GitHub img:hover { -webkit-transform:rotateY(360deg); -moz-transform:rotateY(360deg); }
+
+/* go_Left */
+.go_Left { z-index: 0; width: 120px; height: 120px; position: absolute; top: 55%; left:15%; display: none;}
+.go_Left img { width: 120px; height: 120px; overflow: hidden; -webkit-transition:all 1.5s ease 0s;-moz-transition:all 1.5s ease 0s; }
+.go_Left img:hover { -webkit-transform:rotateX(360deg); -moz-transform:rotateX(360deg); }
 
 /* go_Back */
-.go_Back { position: absolute; top: 10%; right: 8%; width: 50px; height: 50px; }
+.go_Back { z-index: 9; position: absolute; top: 10%; right: 8%; width: 50px; height: 50px; }
 .go_Back img { width: 100px; height: 100px; overflow: hidden; }
 .go_Back img:hover { -webkit-transform:scale(0.95); -moz-transform:scale(0.95); }
 
 #main-iframe { width:100%; height:100%; -webkit-overflow-scrolling:touch; overflow: scroll; }
+
+/* JQ_fullpage opition*/
+.fp-controlArrow { display: none; }
+
 /* chrome */
 @-webkit-keyframes arrow {
 	0%, 100% { -webkit-transform: translateY(0); }

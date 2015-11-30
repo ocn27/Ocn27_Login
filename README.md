@@ -1,4 +1,5 @@
 # Ocn27_Login
+个人主页搭建：www.ocn27.com
 css3动画初始页（用于跳转WordPress）
 使用css3和js写了一个按钮特效。
 弹出的最中间主页按钮用于fullpage插件切屏到WordPress；
